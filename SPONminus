@@ -2,7 +2,7 @@
 // @name        SPON--
 // @namespace   http://www.spiegel.de*
 // @description SpiegelPlus wird entfernt
-// @include     http://www.spiegel.de/
+// @include     http://www.spiegel.de/*
 // @version     1
 // @grant       none
 // ==/UserScript==
