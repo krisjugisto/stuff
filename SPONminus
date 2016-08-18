@@ -1,0 +1,33 @@
+// ==UserScript==
+// @name        SPON--
+// @namespace   http://www.spiegel.de*
+// @description SpiegelPlus wird entfernt
+// @include     http://www.spiegel.de/
+// @version     1
+// @grant       none
+// ==/UserScript==
+
+var resultElements = document.querySelectorAll('.teaser');
+var output = "";
+
+for (var i = 0; i < resultElements.length; i++){
+  laterpayClass = resultElements[i].querySelector('.article-title.laterpay-icon-big');
+  if (laterpayClass !== null) {
+    resultElements[i].parentNode.removeChild(resultElements[i]);
+  };
+}
+
+spiegelPlusArea = document.querySelectorAll('.asset-box.spplusboxhp.listbox-kacheln.inline-pic-credit.clearfix');
+if (spiegelPlusArea[0]) {
+  spiegelPlusArea[0].parentNode.removeChild(spiegelPlusArea[0]);
+}
+
+spiegelPlusArea = document.querySelectorAll('.clearfix.module-box.spiegelplus');
+if (spiegelPlusArea[0]) {
+  spiegelPlusArea[0].parentNode.removeChild(spiegelPlusArea[0]);
+}
+  
+jsColumn = document.querySelector('.column-small.pano_xxl');
+if (jsColumn) {
+  jsColumn.parentNode.removeChild(jsColumn);
+};
