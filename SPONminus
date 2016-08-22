@@ -17,6 +17,11 @@ for (var i = 0; i < resultElements.length; i++){
   };
 }
 
+spiegelPlusArea = document.querySelectorAll('.js-lp-article-link.laterpay-icon');
+if (spiegelPlusArea[0]) {
+  spiegelPlusArea[0].parentNode.removeChild(spiegelPlusArea[0]);
+}
+
 spiegelPlusArea = document.querySelectorAll('.laterpay-icon');
 if (spiegelPlusArea[0]) {
   spiegelPlusArea[0].parentNode.removeChild(spiegelPlusArea[0]);
